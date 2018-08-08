@@ -23,6 +23,7 @@ func (this *ShipController) Get() {
 }
 
 func (this *ShipController) View() {
+	this.Data["IsLogin"] = checkAccount(this.Ctx)
 	this.TplName = "ship_view.tpl"
 
 	news, err := models.GetAllNews(true)
@@ -56,6 +57,7 @@ func (this *ShipController) Post() {
 }
 
 func (this *ShipController) Modify() {
+	this.Data["IsLogin"] = checkAccount(this.Ctx)
 	this.TplName = "ship_modify.tpl"
 
 	tid := this.Input().Get("tid")

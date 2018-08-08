@@ -13,14 +13,13 @@
     </div>
 
     <div class="container">
-        <h1>進貨</h1>
+        <h1>出貨</h1>
         <form method="post" action="/ship">
 
            <hr>
       <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>編號</th>
                     <th>產品類型</th>
                     <th>產品名稱</th>
                     <th>產品型號</th>
@@ -32,9 +31,8 @@
             <tbody>
                 <tr>
                   <form method="post" action="/ship">
-                   <th>
-                    <input type="text" name="id" style="border-width:0;background-color:transparent;width:100px" readonly value="{{.Database.Id}}">
-                  </th>
+
+                     <input type="hidden" name="id" readonly value="{{.Database.Id}}">
                    <th>
                     <input type="text" name="type" style="border-width:0;background-color:transparent;width:100px" readonly value="{{.Database.Type}}">
                   </th>

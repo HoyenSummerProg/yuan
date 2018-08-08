@@ -18,7 +18,6 @@
       <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>編號</th>
                     <th>產品類型</th>
                     <th>產品名稱</th>
                     <th>產品型號</th>
@@ -28,7 +27,6 @@
             <tbody>
                 {{range.News}}
                 <tr>
-                   <th>{{.Id}}</th>
                    <th>{{.Type}}</th>
                    <th>{{.Name}}</th>
                    <th>{{.Model}}</th>

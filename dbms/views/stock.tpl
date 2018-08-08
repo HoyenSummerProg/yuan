@@ -14,22 +14,7 @@
 
     <div class="container">
      <h1>庫存量</h1> 
-     <hr />
-     <form method="Get" action="/stock">
-     <div style="margin-top: 10px; width: 170px" class="pull-left">
-            <label>產品類型</label>
-            <select class="form-control" style="width: 100px" id="browsers" name="browsers">
-              <option>----請選擇----</option>
-              <option>原料</option>
-              <option>半成品</option>
-              <option>成品</option>
-            </select>
-     </div>
 
-     <div class="pull-left" style="width: 170px; margin-top: 35px">
-           <button type="submit" class="btn btn-default">搜尋</button>
-      </div>
-      </form>
     </div>
 
     <div class="container">

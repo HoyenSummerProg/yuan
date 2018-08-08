@@ -22,6 +22,7 @@ func (this *OrderController) Get() {
 }
 
 func (this *OrderController) View() {
+	this.Data["IsLogin"] = checkAccount(this.Ctx)
 	this.TplName = "order_view.tpl"
 
 	news, err := models.GetAllNews(true)
@@ -57,6 +58,7 @@ func (this *OrderController) Post() {
 }
 
 func (this *OrderController) Modify() {
+	this.Data["IsLogin"] = checkAccount(this.Ctx)
 	this.TplName = "order_modify.tpl"
 
 	tid := this.Input().Get("tid")
